@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Produit - Style Étik</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Plateforme de vêtements stylés et éthiques">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="../css/product.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <img class="logo" src="../images/logo.png" alt="Logo Style-étik">
+            <nav>
+                <button><a href="index.html">Accueil</a></button>
+                <button><a href="cart.html">Panier</a></button>
+            </nav>
+        </div>
+        <div class="hero_section">
+            <div class="banner_elements">
+                <div class="banner_text">
+                    <h2>Plus besoin de choisir.</h2>
+                    <p>Style et éthique ? On vous propose les deux.</p>
+                </div>
+                <img class="banner_img" src="../images/banner.webp">
+            </div>
+        </div>
+        <hr class="line line_1">
+        <hr class="line line_2">
+    </header>
+
+    <main>
+        <section class="item">
+            <article>
+                <div class="item_img">
+                    <!--<img src=".../images/produit123.png" alt="altTxt">-->
+                </div>
+                <div class="item_sheet">
+                    <div class="item_titlePrice">
+                        <h2 class="item_name"><!-- Nom du produit --></h3>
+                        <p class="item_price">Prix : <span class="price"><!--12--></span>€</p>
+                    </div>
+
+                    <div class="item_description">
+                        <p class="item_description_title">Description :</p>
+                        <p class="item_description_text"><!-- Dis enim malesuada risus sapien gravida nulla nisl arcu. --></p>
+                    </div>
+
+                    <div class="item_settings">
+                        <div class="item_settings_color">
+                            <label for="select_color">Choisissez une couleur :</label>
+                            <select name="select_color" id="colors">
+                                <option value="">-- Veuillez choisir une couleur --</option>
+                                <!-- <option value="gris">gris</option>
+                                    <option value="bleu">bleu</option> -->
+                            </select>
+                        </div>
+
+                        <div class="item_settings_quantity">
+                            <label for="item_quantity">Nombre d'article(s) (1-100) :</label>
+                            <input type="number" name="item_quantity" min="1" max="100" value="0" id="quantity">
+                        </div>
+
+                        <div class="item_button">
+                            <button id="addToCart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr class="line line_2">
+        <hr class="line line_1">
+        <hr class="line line_2">
+        <div class="footer1">
+            <img class="logo" src="../images/logo.png" alt="logo">
+            <p class="address">28 avenue de la Grande Halle<br />78200 Buchelay</p>
+            <p class="phone">Téléphone : 01 23 45 67 89</p>
+            <p class="email">Email : support@style-etik.com</p>
+        </div>
+        <div class="footer2">
+            <p>&copy; Copyright 2024 - 2030 | Skillz Academy | Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="../js/product.js"></script>
+
+</body>
+
+</html>

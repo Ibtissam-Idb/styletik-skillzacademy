@@ -1,0 +1,266 @@
+/* Base pour toute feuille de style
+
+    1. Header
+
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+body {
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #013c41;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 9%;
+}
+
+nav {
+    display: flex;
+    width: 33%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav button {
+    height: 50%;
+    width: 30%;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 17px;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+nav button:hover {
+    background-color: #fff;
+    border: solid #28ABB4 3px;
+    color: #000;
+}
+
+/* 
+
+    2. Footer
+
+*/
+
+.footer1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #636768;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #494c4d;
+}
+
+footer p {
+    color: #fff;
+}
+
+.hero_section * {
+    margin: 0;
+}
+
+.hero_section {
+    display: inline-block;
+    background-color: #FDFDFD;
+}
+
+.banner_elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_img {
+    width: 50%;
+    height: auto;
+    padding: 0;
+}
+
+.banner_text {
+    position: relative;
+    z-index: 10;
+    left: 5%
+}
+
+.banner_text h2 {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.banner_text p {
+    font-size: 1.5em;
+}
+
+.line {
+    width: 100%;
+    height: 6px;
+    border: none;
+    margin: 0;
+}
+
+.line_1 {
+    background-color: #28ABB4;
+}
+
+.line_2 {
+    margin: 6px 0px;;
+    background-color: #013c41;
+}
+
+/*
+
+    3. Main Section
+
+*/
+
+main {
+    background-color: #28ABB4;
+    padding: 50px 0px 90px;
+}
+
+main h2 {
+    font-size: 2em;
+    color:#fff;
+    margin-top: 0;
+    text-shadow: #013c41 2px 3px 1px;
+}
+
+/* Style propre à product.html */
+
+.price, .item_price {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0;
+    text-shadow: #013c41 2px 3px 1px;
+    font-weight: 600;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.item_img {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    padding: 20px;
+    border: solid 4px #013c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.item_sheet {
+    width: 100%;
+}
+
+.item_img img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.item_titlePrice {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px #fff;
+}
+
+.item_description {
+    border-bottom: solid 2px #013c41;
+    padding-bottom: 25px;
+    border-top: solid 2px #fff;
+    margin-top: 6px;
+}
+
+.item_description_title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.item_description_text {
+    text-align: justify;
+}
+
+.item_settings {
+    border-top: solid 2px #013c41;
+    margin-top: 6px;
+    padding: 25px 0;
+}
+
+main p, main label {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+select, input {
+    border-radius: 10px;
+    padding: 5px 3px;
+    border: 1.5px solid #013c41;
+    text-align: center;
+    font-weight: 500;
+}
+
+.item_settings_color, .item_settings_quantity {
+    margin-bottom: 13px;
+}
+
+.item_button {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.item_button button {
+    border: 2px solid #013c41;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.item_button button:hover {
+    background-color: #013c41;
+    color: #fff;
+}

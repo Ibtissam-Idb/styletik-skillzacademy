@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Panier - Style Étik</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Plateforme de vêtements stylés et éthiques">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="../css/cart_and_confirmation.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <img class="logo" src="../images/logo.png" alt="Logo Style-étik">
+            <nav>
+                <button><a href="index.html">Accueil</a></button>
+                <button><a href="cart.html">Panier</a></button>
+            </nav>
+        </div>
+        <div class="hero_section">
+            <div class="banner_elements">
+                <div class="banner_text">
+                    <h2>Plus besoin de choisir.</h2>
+                    <p>Style et éthique ? On vous propose les deux.</p>
+                </div>
+                <img class="banner_img" src="../images/banner.webp">
+            </div>
+        </div>
+        <hr class="line line_1">
+        <hr class="line line_2">
+    </header>
+
+    <main>
+        <div class="main_content">
+            <div class="main_title">
+                <h2>Votre panier</h2>
+            </div>
+            <section class="cart">
+                <div class="cart_items" id="cartItems">
+
+                    <!-- <article class="cart_item">
+                        <div class="cart_item_content">
+                            <div class="cart_item_content_description">
+                                <div class="cart_item_content_description_titleColorPrice">
+                                    <h3 class="cart_item_name">Product name</h3>
+                                    <p class="cart_item_color">Product color</p>
+                                    <p class="cart_price"><span class="price">12</span>€</p>
+                                </div>
+                                <div class="cart_item_content_settings">
+                                    <div class="cart_item_settings_quantity">
+                                        <label for="quantity">Quantité : </label>
+                                        <input class="item_quantity" type="number" min="1" max="100" value="42">
+                                    </div>
+                                    <button class="cart_item_buttonDelete">Supprimer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article> -->
+
+                </div>
+            </section>
+
+            <div class="cart_totalPrice">
+                <p class="total_price_title">Total (<span id="totalQuantity" class="total_items"><!--1--></span> articles) : <span id="totalPrice"
+                        class="total_price"><!--12--></span>€</p>
+            </div>
+
+            <div class="cart_order">
+                <form class="cart_order_form">
+                    <div class="cart_order_form_question">
+                        <label for="firstName">Prénom: </label>
+                        <input type="text" name="firstName" id="firstName" required>
+                        <p class="error_message" id="firstNameErrorMsg"><!-- Ceci est un message d'erreur --></p>
+                    </div>
+                    <div class="cart_order_form_question">
+                        <label for="lastName">Nom : </label>
+                        <input type="text" name="lastName" id="lastName" required>
+                        <p class="error_message" id="lastNameErrorMsg"></p>
+                    </div>
+                    <div class="cart_order_form_question">
+                        <label for="address">Adresse : </label>
+                        <input type="text" name="address" id="address" required>
+                        <p class="error_message" id="addressErrorMsg"></p>
+                    </div>
+                    <div class="cart_order_form_question">
+                        <label for="city">Ville : </label>
+                        <input type="text" name="city" id="city" required>
+                        <p class="error_message" id="cityErrorMsg"></p>
+                    </div>
+                    <div class="cart_order_form_question">
+                        <label for="email">Email : </label>
+                        <input type="email" name="email" id="email" required>
+                        <p class="error_message" id="emailErrorMsg"></p>
+                    </div>
+                    <div class="cart__order__form__submit">
+                        <button id="order">Confirmer la commande</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <hr class="line line_2">
+        <hr class="line line_1">
+        <hr class="line line_2">
+        <div class="footer1">
+            <img class="logo" src="../images/logo.png" alt="logo">
+            <p class="address">28 avenue de la Grande Halle<br />78200 Buchelay</p>
+            <p class="phone">Téléphone : 01 23 45 67 89</p>
+            <p class="email">Email : support@style-etik.com</p>
+        </div>
+        <div class="footer2">
+            <p>&copy; Copyright 2024 - 2030 | Skillz Academy | Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>
